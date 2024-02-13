@@ -1,5 +1,26 @@
-# Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
-This project was bootstrapped with Fastify-CLI.
+# Fastify Wiremock Example
+
+## Wiremock Server
+
+Start the wiremock server using the following command:
+```
+make up
+```
+
+Stop the wiremock server using the following command:
+```
+make down
+```
+
+Check wiremock logs using the following command:
+```
+make logs
+```
+
+Check wiremock status using the following command:
+```
+make status
+```
 
 ## Available Scripts
 
@@ -18,6 +39,3 @@ For production mode
 
 Run the test cases.
 
-## Learn More
-
-To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/docs/latest/).
