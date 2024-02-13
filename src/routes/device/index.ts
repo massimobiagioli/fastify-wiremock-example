@@ -1,7 +1,7 @@
 import { FastifyPluginAsync } from 'fastify'
 import { Device, DeviceRequest, GetDeviceByIdError, GetDeviceByIdParams } from '../../models/device'
 
-const root: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
+const route: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
   fastify.get<{ Reply: Device[] }>('/', async function (request, reply) {
     return await fastify.deviceService.getDevices()
   })
@@ -20,4 +20,4 @@ const root: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
   })
 }
 
-export default root
+export default route
