@@ -1,0 +1,6 @@
+{
+  "id": {{ request.pathSegments.[3] }},
+  "name": "Device {{ request.pathSegments.[3] }}",
+  "family_id": 1,
+  "address": "10.0.1.{{ request.pathSegments.[3] }}"
+}

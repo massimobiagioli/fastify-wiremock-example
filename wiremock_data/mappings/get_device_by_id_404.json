@@ -1,0 +1,10 @@
+{
+  "request" : {
+    "urlPattern": "^/api/v1/device/\\d*404$",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : ""
+  }
+}

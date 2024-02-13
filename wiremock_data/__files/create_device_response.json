@@ -1,0 +1,6 @@
+{
+  "id": {{randomValue type='NUMERIC' length=5}},
+  "name": "{{jsonPath request.body '$.name'}}",
+  "family_id": {{jsonPath request.body '$.family_id'}},
+  "address": "{{jsonPath request.body '$.address'}}"
+}

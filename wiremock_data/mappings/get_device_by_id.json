@@ -1,0 +1,13 @@
+{
+  "request" : {
+    "urlPattern": "^/api/v1/device/\\d*",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "get_device_by_id_response.json",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  }
+}

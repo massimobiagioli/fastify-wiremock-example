@@ -1,0 +1,29 @@
+{
+  "request" : {
+    "url" : "/api/v1/device",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type": {
+        "equalTo": "application/json"
+      }
+    },
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.name"
+      },
+      {
+        "matchesJsonPath": "$.family_id"
+      },
+      {
+        "matchesJsonPath": "$.address"
+      }
+    ]
+  },
+  "response" : {
+    "status" : 201,
+    "bodyFileName" : "create_device_response.json",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  wiremock:
+    image: wiremock/wiremock:3.3.1
+    restart: always
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./wiremock_data:/home/wiremock
+    entrypoint: ["/docker-entrypoint.sh", "--global-response-templating", "--verbose"]
